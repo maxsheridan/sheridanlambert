@@ -38,31 +38,25 @@ html a:hover {
 }
 
 body { 
-    background-color: #111;
-    background-image: url(/assets/background.webp);
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-position: center; 
-    background-position-x: 15%;
-    margin: 0;
-    padding:0;
+    background-color: #0E000E; 
+    background: url('/assets/background.webp') no-repeat 15% center/cover; 
+    height: 100vh;
+    overflow-y: hidden;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
-    overflow-y: hidden;
-}  
+}     
 
 main {
     height: 100vh;
     overflow: hidden;
 }
 
-.content-inner {
-    padding: 1.5rem 1rem;
+.content {
+    padding: 1.5rem;
 }
 
 p {
@@ -74,12 +68,6 @@ p {
     color: #FFFEFC;
     max-width: 48rem;
     margin: 1rem 0 0 0;
-}
-
-@media only screen and (max-width: 768px) {
-    p {
-        font-size: 1.25rem;
-	}
 }
 
 h2 {
@@ -114,3 +102,15 @@ h2 a {
         transform: rotate(90deg) translateY(50%);
     }
 }    
+
+/*Mobile*/
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 1.5rem 1rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+	}
+}
