@@ -38,8 +38,7 @@ html a:hover {
 }
 
 body { 
-    background-color: #0E000E; 
-    background: url('/assets/background.webp') no-repeat 15% center/cover; 
+    background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover; 
     height: 100vh;
     overflow-y: hidden;
     user-select: none;
