@@ -13,14 +13,6 @@
     font-display: optional;
 }
 
-@font-face {
-    font-family: 'ABC Diatype Semi-Mono';
-    src: url('/assets/type/ABC_Diatype_Semi-Mono.woff2') format('woff2');
-    font-weight: 400;
-    font-style: normal;
-    font-display: optional;
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -30,30 +22,24 @@
 
 html {
     font-size: 16px;
-    cursor: url('/assets/graphics/plus_point.svg'), auto;
-}    
-
+        cursor: url('/assets/smiley_point.svg'), auto;
+}
+    
 html a:hover {
-    cursor: url('/assets/graphics/plus_hover.svg'), auto;
+        cursor: url('/assets/smiley_hover.svg'), auto;
 }
 
 body { 
-    background-color: #111;
-    background-image: url('/assets/background.webp');
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-size: cover; 
-    background-position: center; 
-    background-position-x: 15%;
-    margin: 0;
-    padding:0;
+    background: url('/assets/background.webp') no-repeat 15% center/cover; 
+    height: 100vh;
+    background-color: transparent;
+    overflow-y: hidden;
     user-select: none;
     -webkit-user-select: none;
     -moz-user-select: none;
     text-size-adjust: none;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
-    overflow-y: hidden;
 }   
 
 main {
@@ -61,8 +47,8 @@ main {
     overflow: hidden;
 }
 
-.content {
-    display: flex; 
+.page {
+    display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
@@ -70,9 +56,15 @@ main {
     height: 100vh;
 }
 
-.content-inner {
-    padding: 1.5rem 1rem;
-}  
+.content {
+    padding: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 1.5rem 1rem;
+    }
+} 
 
 p {
     font-family: 'ABC Diatype', Arial, Helvetica, sans-serif;
@@ -85,19 +77,8 @@ p {
     margin: 1rem 0 0 0;
 }
 
-@media only screen and (max-width: 768px) {
-    p {
-        font-size: 1.25rem;
-	}
-}
-
-h3 {
-    font-family: 'ABC Diatype Semi-Mono', Arial, Helvetica, sans-serif;
+p.small {
     font-size: 1.2rem;
-    font-weight: 400;
-    font-style: normal;
-    font-style: normal;
-    line-height: 1.4;
     color: #39FF14;
 }
 
@@ -129,4 +110,15 @@ svg.arrow-upper-right-light {
     width: clamp(12px,1.75vw,13.5px);
     height: auto;
     margin: 0 .5rem .1rem -.1rem;
+}
+
+/*Mobile*/
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 1.25rem;
+    }    
+    p small {
+            font-size: 1.05rem
+	}
 }
