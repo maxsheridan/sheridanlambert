@@ -94,3 +94,9 @@ h2 a {
         padding: 1.5rem 1rem;
     }
 }
+
+@media only screen and (min-width: 361px) and (max-width: 480px) {
+    p {
+        max-width: 94%;
+    }
+}
