@@ -32,8 +32,6 @@ html a:hover {
 
 body { 
     background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover; 
-    height: 100vh;
-    overflow-y: hidden;
     margin: 0;
     -webkit-text-size-adjust: none;
     -moz-text-size-adjust: none;
@@ -41,9 +39,9 @@ body {
     text-size-adjust: none;
 }     
 
-main {
-    height: 100vh;
-    overflow: hidden;
+.page {
+    height: 100vh; 
+    height: 100dvh;
 }
 
 .content {
