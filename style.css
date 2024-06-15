@@ -32,16 +32,15 @@ html a:hover {
 
 body { 
     background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover; 
-    margin: 0;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
     -ms-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }     
 
 .page {
-    height: 100vh; 
     height: 100dvh;
+    height: 100vh; 
 }
 
 .content {
@@ -58,8 +57,8 @@ p {
     font-weight: 400;
     font-style: normal;
     line-height: 1.5;
-    color: #FFFEFC;
     max-width: 45rem;
+    color: #FFFEFC;
     margin: 1rem 0 0 0;
 }
 
