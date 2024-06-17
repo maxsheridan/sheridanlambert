@@ -30,25 +30,29 @@ html a:hover {
     cursor: url('/assets/smiley_hover.svg'), auto;
 }
 
-body { 
-    background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover; 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 100dvh;
+    min-height: 100vh;
+    background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover;
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
-}     
+}
 
 .page {
-    height: 100dvh;
-    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .content {
-    padding: 1.5rem;
-}
-
-svg.logo {
-    margin-top: .25rem;
+    position: absolute;
+    width: 100%;
+    padding: 0 1.5rem 1.5rem;
 }
 
 p {
@@ -75,15 +79,11 @@ a {
     text-decoration: none;
 }
 
-h2 a {
-    color: #39FF14;
-}
-
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 769px) {
 	.copyright {
         position: fixed;
         right: 1.625rem;
-        bottom: 1.656rem;
+        bottom: 2rem;
         transform-origin: bottom right;
         transform: rotate(90deg) translateY(50%);
     }
@@ -91,14 +91,18 @@ h2 a {
 
 /*Mobile*/
 
-@media only screen and (max-width: 768px) {
-    .content {
-        padding: 1.5rem 1rem;
-    }
-}
-
 @media only screen and (min-width: 361px) and (max-width: 480px) {
     p {
         max-width: 94%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .content {
+        padding: 0 1rem 0;
+    }
+
+    footer {
+        padding: 0 1rem 1.5rem; 
     }
 }
