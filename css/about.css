@@ -37,6 +37,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     background: #0E000E url('/assets/background.webp') no-repeat 15% center/cover;
+    background-attachment: fixed; 
     -ms-text-size-adjust: none;
     -moz-text-size-adjust: none;
     -webkit-text-size-adjust: none;
